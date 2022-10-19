@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">languageSwitcherButton</string>
+    <string name="selected_language">English</string>
+    <string name="language">English Selected</string>
 </resources>
