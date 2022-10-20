@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,33 +9,54 @@
     tools:context=".MainActivity"
     tools:ignore="HardcodedText">
 
-    <!--text view for the message to display-->
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="48dp"
         android:text="Current active language is English"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!--button view for hindi language-->
     <Button
         android:id="@+id/btnBangla"
-        android:layout_margin="16dp"
-        android:background="@color/black"
-        android:textColor="#ffffff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bangla"/>
+        android:layout_margin="16dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="648dp"
+        android:layout_marginEnd="186dp"
+        android:layout_marginBottom="229dp"
+        android:background="@color/black"
+        android:text="Bangla"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnEnglish"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <!--button view for english language-->
     <Button
         android:id="@+id/btnEnglish"
-        android:layout_margin="16dp"
-        android:background="@color/black"
-        android:textColor="#ffffff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="English"/>
+        android:layout_margin="16dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="648dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="229dp"
+        android:background="@color/black"
+        android:text="English"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBangla"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

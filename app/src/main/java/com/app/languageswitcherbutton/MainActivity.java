@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnBangla.setOnClickListener(view -> {
-            context = LocaleHelper.setLocale(MainActivity.this, "hi");
+            context = LocaleHelper.setLocale(MainActivity.this, "bn");
             resources = context.getResources();
             messageView.setText(resources.getString(R.string.language));
         });
